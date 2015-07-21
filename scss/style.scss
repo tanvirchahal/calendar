@@ -1,0 +1,80 @@
+/* COLORS */
+$background_color:white;
+$accent_color:#337ab7;
+$calendar_bg:#e3e3e3;
+$calendar_active_day:#4fbeef;
+$calendar_holiday:rgb(215, 12, 0);
+
+body
+{ 
+  background:$background_color;
+}
+
+@mixin shadowz($color: black)
+{
+  box-shadow:0px 5px 10px $color;
+}
+
+/* Main Calendar Container */
+#calendar_container
+{
+	height:auto;
+	margin-top:100px;
+	border-top:5px solid $accent_color;
+	background:$calendar_bg;
+	padding:0px 40px 10px 40px;
+	@include shadowz(grey);
+}
+
+/* Calendar Table */
+#calendar_table 
+{
+	tr
+  {
+    th
+    {
+    text-align:center;
+    }
+  }
+}
+
+/* Heading Day */
+.day_head
+{
+	color:$accent_color;
+}
+
+.month
+{
+	text-align:center;
+	font-weight:100;
+	color:$accent_color;
+}
+
+.calendar_date
+{
+	width:auto;
+	font-size:20px;
+  
+  p
+  {
+	padding:5px;
+  }
+}
+
+.active_day
+{
+	background:$calendar_active_day;
+}
+
+.holiday
+{
+	color:$calendar_holiday;
+}
+
+.calendar_cell:hover
+{
+	background:#eeeeee;
+	cursor:pointer;
+}
+
