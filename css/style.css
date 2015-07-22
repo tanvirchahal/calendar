@@ -1,9 +1,11 @@
 /* COLORS */
+/* line 8, ../scss/style.scss */
 body {
-  background: white;
+  background: orangered;
 }
 
 /* Main Calendar Container */
+/* line 19, ../scss/style.scss */
 #calendar_container {
   height: auto;
   margin-top: 100px;
@@ -14,37 +16,45 @@ body {
 }
 
 /* Calendar Table */
+/* line 34, ../scss/style.scss */
 #calendar_table tr th {
   text-align: center;
 }
 
 /* Heading Day */
+/* line 42, ../scss/style.scss */
 .day_head {
   color: #337ab7;
 }
 
+/* line 47, ../scss/style.scss */
 .month {
   text-align: center;
   font-weight: 100;
   color: #337ab7;
 }
 
+/* line 54, ../scss/style.scss */
 .calendar_date {
   width: auto;
   font-size: 20px;
 }
+/* line 59, ../scss/style.scss */
 .calendar_date p {
   padding: 5px;
 }
 
+/* line 65, ../scss/style.scss */
 .active_day {
   background: #4fbeef;
 }
 
+/* line 70, ../scss/style.scss */
 .holiday {
   color: #d70c00;
 }
 
+/* line 75, ../scss/style.scss */
 .calendar_cell:hover {
   background: #eeeeee;
   cursor: pointer;
